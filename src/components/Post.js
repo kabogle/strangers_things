@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { default as DeletePostButton } from "./DeletePost";
 import { default as EditPostButton } from "./EditPost";
 import { default as SendMessageButton } from "./SendMessage";
