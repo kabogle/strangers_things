@@ -1,0 +1,148 @@
+* {
+  font-family: "Genos", sans-serif;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  background: #333333;
+  background: -webkit-linear-gradient(to bottom, #dd1818, #333333);
+  background: linear-gradient(to bottom, #dd1818, #333333);
+  border: 0;
+  margin: 0;
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  padding: 10px;
+  font-size: large;
+  font-weight: bolder;
+  background: #000000;
+  background: -webkit-linear-gradient(to left, #434343, #000000);
+  background: linear-gradient(to left, #434343, #000000);
+}
+a {
+  color: rgb(121, 7, 7);
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+.displayPosts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+  background: #8e0e00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to bottom,
+    #1f1c18,
+    #8e0e00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #1f1c18,
+    #8e0e00
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.myPost {
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #e74c3c,
+    #000000
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #e74c3c,
+    #000000
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.displayLoginForm {
+  display: flex;
+  flex: center;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  min-height: 50px;
+  min-width: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.displayRegisterForm {
+  display: flex;
+  flex: center;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  min-height: 50px;
+  min-width: 50px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+body {
+  background: #000000;
+  background: -webkit-linear-gradient(to bottom, #434343, #000000);
+  background: linear-gradient(to bottom, #434343, #000000);
+  border: 0;
+  margin: 0;
+  text-align: center;
+}
+h2 {
+  color: #dd1818;
+  margin: 0;
+}
+h3 {
+  margin: 0;
+  color: rgb(201, 182, 182);
+}
+.welcome {
+  padding: 20px;
+}
+.signin {
+  padding: 20px;
+  color: rgb(201, 182, 182);
+}
+.displayMessages {
+  display: grid;
+  align-self: flex-start;
+  padding: 20px;
+  border-radius: 10px;
+  border: white 10px;
+}
+.messageBottom {
+  padding-bottom: 35px;
+}
+.messageTitle {
+  color: rgb(201, 182, 182);
+  padding: 20px;
+}
+.editForm {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: flex-end;
+}
+.sendForm {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.postForm {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  padding-top: 50px;
+}
+.postFormTitle {
+  padding-top: 50px;
+  font-size: 3rem;
+}
