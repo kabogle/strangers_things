@@ -7,7 +7,7 @@ const Login = (props) => {
   const token = props.token;
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const { user, setUser, isLoggedIn, setIsLoggedIn, getPosts } = props;
+  const { user, isLoggedIn, setIsLoggedIn, getPosts } = props;
   const navigate = useNavigate();
 
   const login = (ev) => {
@@ -44,19 +44,13 @@ const Login = (props) => {
       .catch((err) => console.log(err));
   };
 
-  const logout = () => {
-    window.localStorage.removeItem("token");
-    setUser({});
-    window.location.reload(false);
-  };
+
 
   return (
     <div>
       {isLoggedIn ? (
         <div>
-          <h1>Welcome Stranger {user.username}!</h1> <br />
-          <button onClick={(ev) => navigate("./postForm")}>Make a post</button>
-          <button onClick={logout}> Logout </button>
+          <h1>Welcome {user.username}!</h1> <br />
           <section>
             <ViewMessages token={token} user={user} />
           </section>

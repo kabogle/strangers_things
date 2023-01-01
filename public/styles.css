@@ -1,126 +1,130 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
-  
-  }
-  .title{
-    display: flex;
-    justify-content: center;
-    background: gray;  
-    border: 0;
-    margin: 0;
-  }
-  .links{
-    display: flex;
-    background: rgb(151, 151, 151);
-    justify-content: space-around;
-    flex-direction: row;
-    padding: 10px;
-    font-size: large;
-    border: solid black 1px;
-  } 
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  a{
-    color: blue;
-    text-decoration: none;
-  }
-
-  a:hover{
-    color: white;
-  }
-
-  .displayPosts{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start;
-    text-align: start;
-    margin: 20px;
-    padding: 10px;
-    background-color: white;
-    border: solid black 1px;
-    
-  }
-  
-  .myPost{
-    background: lightblue;
-
-  }
-  .displayLoginForm{
+.title {
+  font-size: 3rem;
   display: flex;
-  flex: center;
-  flex-direction: column;
-  align-content: center;
-  justify-items: center;
-  margin: 0 10px 0 10px;
-  width: 200px;
-  
-  
-  }
-  .displayRegisterForm{
-  display: flex;
-  flex: center;
-  flex-direction: column;
-  align-content: center;
-  justify-items: center;
-  margin: 0 10px 0 10px;
-  width: 200px;
-  }
-  
-  body{
+  justify-content: center;
   background: gray;
-  border: 0; 
+  border: 0;
+  margin: 20px 0 20px 0;
+}
+
+.navBar {
+  display: flex;
+  background: rgb(151, 151, 151);
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  font-size: large;
+  border: solid black 1px;
+}
+
+a {
+  color: blue;
+}
+
+a:hover {
+  color: white;
+}
+
+.displayPosts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: start;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  border: solid black 1px;
+}
+
+.myPost {
+  background: lightblue;
+}
+.displayLoginForm {
+  display: flex;
+  flex: center;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  margin: 0 10px 0 10px;
+  width: 200px;
+}
+.displayRegisterForm {
+  display: flex;
+  flex: center;
+  flex-direction: column;
+  align-content: center;
+  justify-items: center;
+  margin: 0 10px 0 10px;
+  width: 200px;
+}
+
+body {
+  background: gray;
+  border: 0;
   margin: 0;
   text-align: center;
-  }
-  h2{
-    color: Blue;
-    margin: 5px 0 5px 0;
-  }
-  h3{
-    color: Black;
-    margin: 5px 0 5px 0;
-  }
-  .welcome{
-    padding: 20px
-  }
-  .signin{
-    padding: 20px;
-    color: rgb(201, 182, 182);
-  }
-  .displayMessages{
-    display:grid;
-    align-self: flex-start;
-    padding: 20px;
-    border: white 10px;
-    
-  }
-  .messageBottom{
-    padding-bottom: 35px;
-  }
-  .messageTitle{
-    color: rgb(201, 182, 182);
-    padding: 20px;
-  
-  }
-  .editForm{
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    align-items: flex-end;
-    
-  }
-  .sendForm{
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-  }
-  .postForm{
-    display: inline-block;
-    width:100px;
-    text-align: left;
-    padding-top: 50px;
-  }
-  .postFormTitle{
-    padding-top: 50px;
-    font-size: 3rem;
-  }
+}
+
+h2 {
+  color: Blue;
+  margin: 5px 0 5px 0;
+}
+
+h3 {
+  color: Black;
+  margin: 5px 0 5px 0;
+}
+
+.welcome {
+  padding: 20px;
+}
+
+.signin {
+  padding: 20px;
+  color: rgb(201, 182, 182);
+}
+
+.displayMessages {
+  display: grid;
+  align-self: flex-start;
+  padding: 20px;
+  border: white 10px;
+}
+
+.messageBottom {
+  padding: 0 0 10px 0;
+}
+
+.messageTitle {
+  color: rgb(201, 182, 182);
+  padding: 20px;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  align-items: flex-end;
+}
+
+.sendForm {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.postForm {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  padding: 50 0 0 0;
+}
+
+.postFormTitle {
+  font-size: 3rem;
+}

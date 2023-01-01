@@ -62,13 +62,25 @@ const App = () => {
     exchangeTokenForUser();
   });
 
+  const logout = () => {
+    window.localStorage.removeItem("token");
+    setUser({});
+    window.location.reload(false);
+  };
+
   return (
     <div>
       <h1 className="title">Strangers Things</h1>
-      <nav className="links">
+      <nav className="navBar">
         <Link to="/posts">Posts ({posts.length})</Link>
         <Link to="/login">{token ? "Messages" : "Login"}</Link>
         {token ? null : <Link to="/register">Register</Link>}
+        <div>
+          {" "}
+          <p>
+            <button onClick={logout}> Logout </button>
+          </p>
+        </div>
       </nav>
       <Routes>
         <Route exact path="/" element={<Navigate to="/posts" />} />
